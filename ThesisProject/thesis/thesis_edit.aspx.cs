@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ThesisProject.thesis
 {
-    public partial class thesis_update : System.Web.UI.Page
+    public partial class thesis_edit : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -148,7 +148,7 @@ namespace ThesisProject.thesis
 
 
             thesis.ThesisUpdate(authorId,supervisorId,cosupervisorId,universityId,instutueId,languageId,typeId,keywordId, PageNumber,txtAbstract.Text, txtYear.Text,currentDateTime,thesisID);
-
+            Response.Redirect("/thesis/thesis_edit.aspx");
 
         }
     }

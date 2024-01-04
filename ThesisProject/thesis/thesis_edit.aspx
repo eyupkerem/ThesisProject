@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="thesis_edit.aspx.cs" Inherits="ThesisProject.thesis.thesis_update" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="thesis_edit.aspx.cs" Inherits="ThesisProject.thesis.thesis_edit" %>
 
 <!DOCTYPE html>
 <html lang="en">
