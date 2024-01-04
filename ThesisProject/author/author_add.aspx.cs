@@ -18,8 +18,9 @@ namespace ThesisProject.author
         {
             ThesisProjectDataTableAdapters.AUTHORTableAdapter newAuthor = new ThesisProjectDataTableAdapters.AUTHORTableAdapter();
 
-            //decimal authorPhoneNumber = decimal.Parse(txtAuthorPhoneNumber.Text);
-            //newAuthor.AuthorAdd(txtAuthorName.Text, txtAuthorSurname.Text, authorPhonenumber.Text, txtAuthorEmail.Text);
+            decimal authorPhoneNumber = Convert.ToDecimal(txtAuthorPhoneNumber.Text);
+            newAuthor.AuthorAdd(txtAuthorName.Text, txtAuthorSurname.Text, authorPhoneNumber, txtAuthorEmail.Text);
+            Response.Redirect("/author/author_list.aspx");
         }
     }
 }

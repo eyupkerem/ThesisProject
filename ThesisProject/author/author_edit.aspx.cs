@@ -17,12 +17,12 @@ namespace ThesisProject.author
                 ThesisProjectDataTableAdapters.AUTHORTableAdapter author = new ThesisProjectDataTableAdapters.AUTHORTableAdapter();
                 string authorName = author.AuthorGet(id)[0].NAME_;
                 string authorLastName = author.AuthorGet(id)[0].LASTNAME_;
-                decimal authorPhoneNumber = author.AuthorGet(id)[0].NUMBER_;
+                string authorPhoneNumber = Convert.ToString(author.AuthorGet(id)[0].NUMBER_);
                 string authorEmail = author.AuthorGet(id)[0].EMAIL;
 
                 txtAuthorName.Text = authorName;
                 txtAuthorSurname.Text = authorLastName;
-                //Phone Number Operations
+                txtAuthorPhoneNumber.Text = authorPhoneNumber;
                 txtAuthorEmail.Text = authorEmail;
 
 
@@ -33,7 +33,12 @@ namespace ThesisProject.author
         {
             int id = Convert.ToInt32(Request.QueryString["id"]);
             ThesisProjectDataTableAdapters.AUTHORTableAdapter author = new ThesisProjectDataTableAdapters.AUTHORTableAdapter();
-            //author.AuthorUpdate(txtAuthorName.Text, txtAuthorSurname.Text, , txtAuthorEmail.Text, id);  //Phone Number Operations
+
+            decimal authorPhoneNumber = Convert.ToDecimal(txtAuthorPhoneNumber.Text);
+
+
+            author.AuthorUpdate(txtAuthorName.Text, txtAuthorSurname.Text, authorPhoneNumber, txtAuthorEmail.Text, id);
+            Response.Redirect("/author/author_list.aspx");
 
 
         }

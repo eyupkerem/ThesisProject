@@ -20,29 +20,38 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                       Thesis 
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="../author/author_list.aspx">Authors</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="../city/city_list.aspx">Cities</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="../Cosupervisor/Cosupervisor_list.aspx">Cosupervisors</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="../instutues/instutues_list.aspx">Instutues</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="../keywords/keywords_list.aspx">Keywords</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="../languages/languages_list.aspx">Languages</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="../supervisor/supervisor_list.aspx">Supervisors</a>
+                </li> 
+                <li>
+                    <a href="../thesis/thesis_list.aspx">Thesis</a>
+                </li>  
+                <li>
+                    <a href="../types/types_list.aspx">Types</a>
+                </li>   
+                <li>
+                    <a href="/university/university_list.aspx">Universities</a>
                 </li>
             </ul>
         </div>
@@ -52,9 +61,11 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                     <form id="form2" runat="server">
+                        <h2>Author List</h2>
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Name</th>
                                     <th>Last Name</th>
                                     <th>Phone Number</th>
@@ -66,6 +77,7 @@
                                 <asp:Repeater runat="server" ID="authorList">
                                     <ItemTemplate>
                                         <tr>
+                                            <td><%# Eval("AUTHORID") %></td>
                                             <td><%# Eval("NAME_") %></td>
                                             <td><%# Eval("LASTNAME_") %></td>
                                             <td><%# Eval("NUMBER_") %></td>

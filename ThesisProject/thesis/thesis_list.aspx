@@ -1,4 +1,4 @@
-﻿//<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="thesis_list.aspx.cs" Inherits="ThesisProject.thesis.thesis_list" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="thesis_list.aspx.cs" Inherits="ThesisProject.thesis.thesis_list" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,29 +18,38 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                       Thesis 
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="../author/author_list.aspx">Authors</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="../city/city_list.aspx">Cities</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="../Cosupervisor/Cosupervisor_list.aspx">Cosupervisors</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="../instutues/instutues_list.aspx">Instutues</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="../keywords/keywords_list.aspx">Keywords</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="../languages/languages_list.aspx">Languages</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="../supervisor/supervisor_list.aspx">Supervisors</a>
+                </li> 
+                <li>
+                    <a href="../thesis/thesis_list.aspx">Thesis</a>
+                </li>  
+                <li>
+                    <a href="../types/types_list.aspx">Types</a>
+                </li>   
+                <li>
+                    <a href="/university/university_list">Universities</a>
                 </li>
             </ul>
         </div>
@@ -93,7 +102,7 @@
                                         <td>
 
                                             <asp:HyperLink NavigateUrl='<%# "thesis_delete.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
-                                            <asp:HyperLink NavigateUrl='<%# "thesis_update.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-success">Edit</asp:HyperLink>
+                                            <asp:HyperLink NavigateUrl='<%# "thesis_edit.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-success">Edit</asp:HyperLink>
 
                                        </td>
                                       </tr>    
@@ -101,7 +110,7 @@
                                 </asp:Repeater>
                             </tbody>
                         </table>
-
+                        <a href="/thesis/thesis_add.aspx" role="button" class="btn btn-dark" >Add Thesis</a>
                     </form>
             </div>    
         </div>

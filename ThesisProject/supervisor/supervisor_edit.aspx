@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
@@ -23,29 +23,38 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                       Thesis 
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="../author/author_list.aspx">Authors</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="../city/city_list.aspx">Cities</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="../Cosupervisor/Cosupervisor_list.aspx">Cosupervisors</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="../instutues/instutues_list.aspx">Instutues</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="../keywords/keywords_list.aspx">Keywords</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="../languages/languages_list.aspx">Languages</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="../supervisor/supervisor_list.aspx">Supervisors</a>
+                </li> 
+                <li>
+                    <a href="../thesis/thesis_list.aspx">Thesis</a>
+                </li>  
+                <li>
+                    <a href="../types/types_list.aspx">Types</a>
+                </li>   
+                <li>
+                    <a href="/university/university_list">Universities</a>
                 </li>
             </ul>
         </div>

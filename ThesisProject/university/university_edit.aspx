@@ -18,29 +18,38 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                       Thesis 
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="../author/author_list.aspx">Authors</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="../city/city_list.aspx">Cities</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="../Cosupervisor/Cosupervisor_list.aspx">Cosupervisors</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="../instutues/instutues_list.aspx">Instutues</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="../keywords/keywords_list.aspx">Keywords</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="../languages/languages_list.aspx">Languages</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="../supervisor/supervisor_list.aspx">Supervisors</a>
+                </li> 
+                <li>
+                    <a href="../thesis/thesis_list.aspx">Thesis</a>
+                </li>  
+                <li>
+                    <a href="../types/types_list.aspx">Types</a>
+                </li>   
+                <li>
+                    <a href="/university/university_list">Universities</a>
                 </li>
             </ul>
         </div>
@@ -61,7 +70,7 @@
                          </asp:DropDownList>
                      </div>
                       <asp:Button Text="Save" ID="Button1" runat="server" CssClass="btn btn-success" OnClick="Button1_Click"/>
-                      <a href="/university/university_lists.aspx" class="btn btn-danger">Cancel</a>
+                      <a href="university_list.aspx" class="btn btn-danger">Cancel</a>
                  </form>
             </div>    
         </div>
