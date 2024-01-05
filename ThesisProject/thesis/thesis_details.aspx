@@ -14,7 +14,6 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <h1>Thesis details </h1>
              <div class="buttons">
                <a href="/thesis/thesis_list.aspx" role="button" class="btn btn-success">Back to Thesis List</a>
                <a href="../author/author_list.aspx" role="button" class="btn btn-success">Back to Author List</a>
@@ -24,25 +23,78 @@
                <a href="../languages/languages_list.aspx" role="button" class="btn btn-success">Back to Language List</a>
                <a href="../city/city_list.aspx" role="button" class="btn btn-success">Back to City List</a>
              </div>
+            <h2 style="text-align:center">Thesis Detail </h2>
+
             <asp:Repeater runat="server" ID="thesisList">
                  <ItemTemplate>
-                   
-              <h3> Thesis number :  <%# Eval("THESIS_ID") %></h3>
-              <h3> Author Name: <%# getAuthorName(Convert.ToInt32(Eval("AUTHORID"))) %></h3>
-              <h3> Supervisor Name: <%#getSupervisorName(Convert.ToInt32(Eval("SUPERVISORID"))) %></h3>
-              <h3> Cosupervisor Name : <%#getCoSupervisorName(Convert.ToInt32(Eval("COSUPERVISORID"))) %></h3>
-              <h3> University Name : <%# getUniversityName(Convert.ToInt32(Eval("UNIVERSITYID"))) %></h3>
-              <h3> Instutue : <%# getInstutes(Convert.ToInt32(Eval("INSTUTUESID"))) %></h3>
-              <h3> Language : <%# getLanguage(Convert.ToInt32(Eval("LANGUAGE_ID"))) %></h3>
-              <h3> Type : <%# getType(Convert.ToInt32(Eval("TYPES_ID"))) %></h3>
-              <h3> Keyword : <%# getKeyword(Convert.ToInt32(Eval("KEYWORD_ID"))) %></h3>
-              <h3> Page Number : <%# Eval("PAGENUM") %></h3>
-              <h3> Abstarct :  <%# Eval("ABSTRACT") %></h3>
-              <h3> Year :<%# Eval("YEAR_") %></h3>
-              <h3> Submission Date :<%# Eval("SUBDATE") %></h3>
 
-     <asp:HyperLink NavigateUrl='<%# "thesis_delete.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
-     <asp:HyperLink NavigateUrl='<%# "thesis_edit.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-success">Edit</asp:HyperLink>
+                     <table class="table table-borderless">
+                         <thead>    
+                             <tr>
+                                 <th> </th>
+                                 <th> </th>
+                                 <th> </th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td> <h4>Thesis number </h4>  </td>
+                                 <td> <%# Eval("THESIS_ID") %></td>
+                             </tr>
+                             <tr>
+                                 <td> <h4> Author Name</h4></td>
+                                 <td><%# getAuthorName(Convert.ToInt32(Eval("AUTHORID"))) %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Supervisor Name </h4> </td>
+                                 <td> <%#getSupervisorName(Convert.ToInt32(Eval("SUPERVISORID"))) %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Cosupervisor Name </h4>  </td>
+                                 <td> <%#getCoSupervisorName(Convert.ToInt32(Eval("COSUPERVISORID"))) %></td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>University Name </h4> </td>
+                                 <td> <%# getUniversityName(Convert.ToInt32(Eval("UNIVERSITYID"))) %></td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Instutue</h4</td>
+                                 <td> <%# getInstutes(Convert.ToInt32(Eval("INSTUTUESID"))) %></td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Language </h4> </td>
+                                 <td>  <%# getLanguage(Convert.ToInt32(Eval("LANGUAGE_ID"))) %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4> Type</h4>  </td>
+                                 <td> <%# getType(Convert.ToInt32(Eval("TYPES_ID"))) %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4> Keyword</h4>  </td>
+                                 <td>   <%# getKeyword(Convert.ToInt32(Eval("KEYWORD_ID"))) %></td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Page Number</h4>  </td>
+                                 <td>  <%# Eval("PAGENUM") %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Abstarct</h4>  </td>
+                                 <td>  <%# Eval("ABSTRACT") %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Year</h4></td>
+                                 <td> <%# Eval("YEAR_") %> </td>
+                             </tr>
+                             <tr>
+                                 <td> <h4>Submission Date</h4>  </td>
+                                 <td> <%# Eval("SUBDATE") %></td>
+                             </tr>
+
+                         </tbody>
+                     </table>
+
+
+  
 
  
                  </ItemTemplate>

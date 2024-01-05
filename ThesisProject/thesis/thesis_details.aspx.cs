@@ -16,8 +16,6 @@ namespace ThesisProject.thesis
             thesisList.DataSource = thesis.GEtThesis(id);
             thesisList.DataBind();
 
-            //thesisList.DataSource = thesis.GetAllThesis();
-            //thesisList.DataBind();
         }
         public string getAuthorName(int authorId)
         {

@@ -1,0 +1,110 @@
+﻿.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #333333;
+}
+
+.navbar-title {
+    font-weight: bold;
+    width: 25%;
+}
+
+    .navbar-title span {
+        font-size: 30px;
+        color: #fff;
+    }
+
+        .navbar-title span:hover {
+            font-size: 40px;
+            font-weight: bolder;
+            color: #fff;
+        }
+
+.navbar-collapse {
+    width: 75%;
+
+}
+
+.navbar-nav li {
+    margin: 0;
+    padding: 0px 20px;
+}
+.nav-item a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .nav-item a:hover {
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+        font-size: 25px;
+    }
+
+/*.nav-item button {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .nav-item button:hover {
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+        font-size: 25px;
+    }*/
+
+.table-title {
+    text-align: center;
+}
+
+.footer {
+    height: 8.5rem;
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+    .footer-links a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+        .footer-links a:hover {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+.footer-link {
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.footer-descriptions {
+    margin-top: 1.5rem;
+}

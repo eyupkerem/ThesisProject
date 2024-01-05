@@ -59,8 +59,8 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                     <form id="form1" runat="server">
-                      <table class="table table-bordered table-hover">
                           <h1>Thesis List</h1>
+                      <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
                                   <th>Id</th>
@@ -94,7 +94,7 @@
                                         <td><%# getKeyword(Convert.ToInt32(Eval("KEYWORD_ID"))) %></td>
                                         <td><%# Eval("PAGENUM") %></td>
                                         <td>
-                                            <asp:HyperLink NavigateUrl='<%# "thesis_details.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-danger">Click here to more details</asp:HyperLink>
+                                            <asp:HyperLink NavigateUrl='<%# "thesis_details.aspx?id=" + Eval("THESIS_ID") %>' runat="server" CssClass="btn btn-warning">More details...</asp:HyperLink>
 
                                         </td>
                                         <td><%# Eval("YEAR_") %></td>
